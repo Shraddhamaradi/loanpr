@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 
 # Load model
-model = pickle.load(open("C:\\Users\\klebc\\OneDrive\\Desktop\\loan\\loan_model (2).pkl", "rb"))
+model = pickle.load(open("loan_model.pkl", "rb"))
 
 
 st.title("🏦 Loan Approval Prediction System")
@@ -47,3 +47,4 @@ if st.button("Predict"):
     import os
 
     port = int(os.environ.get("PORT",8501))    
+
